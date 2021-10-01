@@ -11,7 +11,11 @@ int maxProfit(vector<int> &price){
 
 int main(){
 
-	vector<int> price = {1,5,3,8,12};
+	vector<int> price;
+	int n; cin >> n;
+	for(int i = 0; i < n; i++){
+		int x; cin >> x;
+		price.push_back(x);}
 	cout << maxProfit(price);
 
 	return 0;
