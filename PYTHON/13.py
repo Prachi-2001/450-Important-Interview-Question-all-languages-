@@ -1,3 +1,4 @@
+# Kadane's algorithm
 # This is used to find the maximum sub-array sum in the given array
 class Solution:
     def maxSubArray(self,a):
