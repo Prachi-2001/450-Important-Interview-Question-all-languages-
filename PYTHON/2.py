@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 arr = [25, 11, 7, 75, 56];     
      
 #Initialize max with first element of array.    
@@ -24,16 +18,4 @@ for i in range(0, len(arr)):
        min = arr[i];    
      
 print("Smallest element present in given array: " + str(min));    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
