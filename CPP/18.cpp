@@ -19,9 +19,13 @@ int main(){
 
 	IO();
 	
-	vector<int> v = {-2,2,5,-11,6};
-	cout << consecutiveSumMax(v);
+	vector<int> v;
+	int n; cin >> n;
+	for(int i = 0; i < n; i++){
+		int x; cin >> x;
+		v.push_back(x);
+	}
+	cout << "Max Sum: " <<consecutiveSumMax(v);
 	
-
 	return 0;
 }
