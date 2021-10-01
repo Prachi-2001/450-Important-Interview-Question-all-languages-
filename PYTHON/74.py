@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[17]:
-
-
 #kmp algo
 def KMPSearch(pat, txt):
 	M = len(pat)
@@ -42,16 +36,6 @@ def computeLPSArray(pat, M, lps):
 txt = "ABABDABACDABABCABAB"
 pat = "ABABCABAB"
 KMPSearch(pat, txt)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
