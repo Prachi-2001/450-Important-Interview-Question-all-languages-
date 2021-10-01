@@ -1,29 +1,38 @@
 //find all pairs on integer array whose sum is equal to given number
+#include <bits/stdc++.h>
 #include<iostream>
 using namespace std;
 
+void pairedElements(int arr[],
+                    int sum, int n)
+{
+    int low = 0;
+    int high = n - 1;
+
+    while (low < high)
+    {
+        if (arr[low] + arr[high] == sum)
+        {
+            cout << "The pair is : (" << arr[low] << ", " << arr[high] << ")" << endl;
+        }
+        if (arr[low] + arr[high] > sum)
+        {
+            high--;
+        }
+        else
+        {
+            low++;
+        }
+    }
+}
+
+// Driver code
 int main()
 {
-  int size,sum;
-  cout<<"\n enter size of array:";
-  cin>>size;
-  int i,a[size],j;
-  cout<<"\n enter sum :";
-  cin>>sum;
-  for(i=0;i<size;i++)
-  {
-      cout<<"\n enter "<<i+1<<" th element:";
-      cin>>a[i];
-  }
-  for(i=0;i<size;i++)
-  {
-      for(j=i;j<size;j++)
-      {
-           if(a[i]+a[j]==sum)
-           {
-               cout<<a[i]<<" "<<a[j]<<endl;
-           }
-      }
-  }
-  return 0;
+    int arr[] = {2, 3, 4, -2,
+                 6, 8, 9, 11};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    sort(arr, arr + n);
+    pairedElements(arr, 6, n);
+    return 0;
 }
