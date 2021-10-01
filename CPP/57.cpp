@@ -1,5 +1,5 @@
+//Check whether a String is Palindrome or not
 #include <iostream>
-
 
 int main(){
     char string1[20];
