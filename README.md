@@ -5,6 +5,7 @@
 - File Name Format must match to be a accepted `QuestionNumber.fileFormat`.
 - Please add comment of Question name above the code.
 - Do Questions in your respective directories and if there is no directory than create one.
+- Before doing the Question must check the question is already done or not. If it is already done but you know more optimized method then do it otherwise go for other question
 
 [![Awesome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) &nbsp;
 
