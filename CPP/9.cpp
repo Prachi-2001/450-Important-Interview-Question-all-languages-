@@ -1,3 +1,4 @@
+// Minimise the maximum difference between heights [V.IMP]
 #include <iostream>
 #include <algorithm>
 using namespace std;

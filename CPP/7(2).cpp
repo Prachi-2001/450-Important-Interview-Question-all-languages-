@@ -1,3 +1,4 @@
+// Write a program to cyclically rotate an array by one.
 #include <iostream>
 using namespace std;
 
