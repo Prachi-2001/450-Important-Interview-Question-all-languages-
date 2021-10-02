@@ -1,0 +1,66 @@
+/* Rotate matrix by 90 degrees */
+
+
+#include <bits/stdc++.h>
+using namespace std;
+#define N 4
+
+void displayMatrix(int mat[N][N]);
+ 
+// function to rotate by 90 degrees in anti-clockwise direction
+void rotateMat(int mat[][N])
+{
+    
+    for (int x = 0; x < N / 2; x++) {
+        for (int y = x; y < N - x - 1; y++) {
+            int temp = mat[x][y];
+ 
+            mat[x][y] = mat[y][N - 1 - x];
+ 
+            mat[y][N - 1 - x]
+                = mat[N - 1 - x][N - 1 - y];
+ 
+            mat[N - 1 - x][N - 1 - y]
+                = mat[N - 1 - y][x];
+ 
+            mat[N - 1 - y][x] = temp;
+        }
+    }
+}
+ 
+// Function to print matrix
+void displayMatrix(int mat[N][N])
+{
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++)
+            printf("%2d ", mat[i][j]);
+ 
+        printf("\n");
+    }
+    printf("\n");
+}
+ 
+
+int main()
+{
+    int mat[N][N];
+    cout<<"\nEnter elements of a 4*4 matrix row wise \n";
+    for (int i = 0; i < N; i++) 
+    {
+        cout<<"Enter elements for row "<<i+1<<" : ";
+
+        for (int j = 0; j < N; j++)
+            cin>>mat[i][j];
+    }
+
+    cout<<"\n Matrix before rotation: \n";
+    displayMatrix(mat);
+
+    //calling function to rotate matrix
+    rotateMat(mat);
+ 
+    cout<<"\n Matrix after rotation (Anti clockwise) : \n";
+    displayMatrix(mat);
+ 
+    return 0;
+}
