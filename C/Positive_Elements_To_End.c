@@ -1,6 +1,6 @@
 
 /* 
-     Move all the negative elements to one side of the array in c
+     Move all the negative elements to one side of the array in c 
 */
 
 
