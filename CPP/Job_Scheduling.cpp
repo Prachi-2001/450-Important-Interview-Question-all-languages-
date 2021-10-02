@@ -80,6 +80,7 @@ void job_Schedule(job arr[], int n) ///function for schedule the job
             }
         }
     }
+    
     cout << "MAXIMUM PROFIT SEQUENCE OF JOB : ";
     for (int i = 0; i < n; i++)
     {
