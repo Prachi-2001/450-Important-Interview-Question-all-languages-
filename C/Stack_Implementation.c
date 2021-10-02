@@ -1,3 +1,4 @@
+//Stack implementation from scratch
 #include<stdio.h>
 #define SIZE 5
 int stack[SIZE];
