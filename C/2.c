@@ -1,5 +1,5 @@
 // Sorting an array using bubble sort method
-#inlcude<stdio.h>
+#include<stdio.h>
 int main()
 {
 int arr[5];
@@ -8,7 +8,7 @@ int arr[5];
   for ( int k = 0 ; k < 5; k++)
   {
     scanf("%d",&arr[k]);}
-   int i, j;
+   int i, j,n;
    for (i = 0; i < n-1; i++)     
    {
        // Last i elements are already in place  
