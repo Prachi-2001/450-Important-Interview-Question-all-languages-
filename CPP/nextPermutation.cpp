@@ -2,9 +2,7 @@ class Solution {
 public:
     void nextPermutation(vector<int>& a) {
         int n = a.size();
-        if(n == 1)return ;
-        //intution esa hai ki last se start krenge dekhna to ek woh incresing hoga fir decreasing to jaha se decreasing start ho use lelo
-        
+        if(n == 1)return ;        
         int ind1 = -1;
         for(int i = n-2;i>=0;i--)
         {
