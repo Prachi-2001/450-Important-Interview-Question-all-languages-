@@ -1,3 +1,5 @@
+//Q367)Dijkstra algo
+
 #include<bits/stdc++.h>
 using namespace std;
 
